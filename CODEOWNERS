@@ -6,4 +6,4 @@
 # modifies JS files, only @js-owner and not the global
 # owner(s) will be requested for a review.
 *.py    44helpap@gmail.com
-*.txt   @44helpap/octocats
+*.txt   @sixis2/savage
