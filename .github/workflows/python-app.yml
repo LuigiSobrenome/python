@@ -3,18 +3,19 @@
 
 name: Create Coverage
 
-on:
-  push:
-    branches: 
-    - "*"
-
-permissions: write-all
+on: [push, pull_request]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v3
+        - uses: actions/checkout@v3
+        - uses: actions/setup-python@v2
+          with:
+            python-version: '3.11'
+        - name: Install requirements
+          run: pip install -r api/requirements.txt
+        - name: Run tests and collect coverage
+          run: pytest --cov=api.calculator --cov-report=xml
+        - name: Upload coverage reports to Codecov
+          uses: codecov/codecov-action@v3
