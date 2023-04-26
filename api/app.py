@@ -3,7 +3,7 @@ from flask import (
     request,
 )
 
-from calculator import Calculator
+from calculator.calculator import Calculator
 
 app = Flask(__name__)
 
