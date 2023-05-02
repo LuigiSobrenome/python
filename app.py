@@ -20,7 +20,7 @@ sentry_sdk.init(
     # release="myapp@1.0.0",
 )
 
-from calculator.calculator import Calculator
+from api.calculator.calculator import Calculator
 
 app = Flask(__name__)
 
@@ -49,8 +49,8 @@ def operation(method, num_factors):
     return str(getattr(Calculator, method)(*factors))
 
 @app.route('/error')
-    def ohno():
-        division_by_zero = 1/0
-        return
+def ohno():
+    Calculator.explode(1,0)
+    return
 
 app.run(host='0.0.0.0', port=8080)
