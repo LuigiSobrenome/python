@@ -49,8 +49,8 @@ def operation(method, num_factors):
     return str(getattr(Calculator, method)(*factors))
 
 @app.route('/error')
-def ohno():
-    Calculator.explode(1,0)
+def divide_by_zero():
+    Calculator.divide(1,0)
     return
 
 app.run(host='0.0.0.0', port=8080)
