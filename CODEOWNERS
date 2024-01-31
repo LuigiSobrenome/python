@@ -1,3 +1,6 @@
-/api/calculator/ @LuigiSobrenome
-/api/calculator/divide @LuigiSobrenome
-/api/calculator/multiply @LuigiSobrenome
+[Backend]
+/backend/ @elliotdes
+
+[Frontend]
+/frontend/ @adamyoung
+/frontend-v2/ @adamyoung
