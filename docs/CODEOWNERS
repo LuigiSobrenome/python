@@ -1,8 +1,5 @@
 /backend/ @LuigiSobrenome
 
-# This file is used by sentry for issue auto-assignment.
-# If you want to have it enabled, you'll have to add your team handle after each line as sentry does not handle sections ([cfts-name])
-
 [cft-ops-tooling] @LuigiSobrenome
 app/contexts/document_exports/ @LuigiSobrenome
 app/contexts/italian_seizures/ @LuigiSobrenome
