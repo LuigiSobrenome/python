@@ -3,6 +3,7 @@
 [cft-ops-tooling] @LuigiSobrenome
 app/contexts/document_exports/ @LuigiSobrenome
 app/contexts/italian_seizures/ @LuigiSobrenome
+app/contexts/document_exports/imports @LuigiSobrenome
 app/contexts/german_seizures/ @LuigiSobrenome
 app/contexts/french_seizures/ @LuigiSobrenome
 app/contexts/kyb/ @LuigiSobrenome
